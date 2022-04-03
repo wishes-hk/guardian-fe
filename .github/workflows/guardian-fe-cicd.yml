@@ -3,7 +3,10 @@ name: guardian-fe-cicd
 on:
   push:
     branches: 
-      - production
+      - prod
+  pull_request:
+    branches:    
+      - prod
 
 jobs:
   build:
