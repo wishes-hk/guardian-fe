@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
+
 import {
   Avatar,
   Box,
@@ -7,11 +9,12 @@ import {
   Checkbox,
   Container,
   CssBaseline,
-  FormControlLabel, Grid, Link,
+  FormControlLabel,
+  Grid,
   TextField,
   Typography
-} from '@mui/material';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+} from '@mui/material'
+import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
 
 const SignIn: NextPage = () => {
   return (
@@ -76,12 +79,12 @@ const SignIn: NextPage = () => {
             </Button>
             <Grid container>
               <Grid item xs>
-                <Link href="#" variant="body2">
+                <Link href='/forget'>
                   Forgot password?
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link href='/signup'>
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>
