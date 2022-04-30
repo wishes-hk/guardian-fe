@@ -26,6 +26,6 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: wisheshk/${{ github.event.repository.name }}-${{ github.ref_name }}
+        tags: wisheshk/wishes-${{ github.event.repository.name }}-${{ github.ref_name }}
     
     
